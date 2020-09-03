@@ -1,8 +1,8 @@
 export enum AppRoute {
-  ROOT = "root",
+  MAIN = "main",
   TAB_ONE = "tab-one",
   TAB_TWO = "tab-two",
   OOPS = "oops",
-  TAB_ONE_SCREEN = "tab-one-screen",
-  TAB_TWO_SCREEN = "tab-two-screen",
+  HOME_SCREEN = "home-screen",
+  SETTINGS_SCREEN = "settings-screen",
 }

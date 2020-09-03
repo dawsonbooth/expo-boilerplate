@@ -8,8 +8,10 @@ import {
   SaveAreaInset,
 } from "../../components/safe-area-layout.component";
 
-export function TabTwoScreen() {
-  const title = "Tab Two";
+import { settings } from "../main";
+
+export function SettingsScreen() {
+  const title = settings.title;
 
   return (
     <SafeAreaLayout insets={SaveAreaInset.TOP} style={styles.screen}>
