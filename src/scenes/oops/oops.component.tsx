@@ -3,7 +3,7 @@ import * as React from "react";
 import { StyleSheet } from "react-native";
 import { Text, Button, Divider } from "@ui-kitten/components";
 
-import { RootParamList } from "../../navigation/types";
+import { RootParamList } from "../../navigation";
 import { AppRoute } from "../../navigation/app-routes";
 import { SafeAreaLayout } from "../../components/safe-area-layout.component";
 

@@ -3,7 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
 
 import { OopsScreen } from "../scenes/oops";
-import MainNavigator from "../scenes/main/main.navigator";
+import { MainNavigator } from "../scenes/main";
 
 import { AppRoute } from "./app-routes";
 

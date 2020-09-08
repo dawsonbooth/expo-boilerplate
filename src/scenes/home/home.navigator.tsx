@@ -5,6 +5,10 @@ import { AppRoute } from "../../navigation/app-routes";
 
 import { HomeScreen } from "./home.component";
 
+import { IconProps, Icon, IconElement } from "@ui-kitten/components";
+
+import * as strings from "./strings";
+
 export type HomeParamList = {
   [AppRoute.HOME_SCREEN]: undefined;
 };
@@ -18,3 +22,14 @@ export function HomeNavigator() {
     </HomeStack.Navigator>
   );
 }
+
+const HomeIcon = (props: IconProps): IconElement => (
+  <Icon {...props} name="home-outline" />
+);
+
+export const tab = {
+  title: strings.title,
+  icon: HomeIcon,
+  component: HomeNavigator,
+};
+export const path = "home";
