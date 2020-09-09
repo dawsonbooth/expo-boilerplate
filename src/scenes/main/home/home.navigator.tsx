@@ -1,9 +1,9 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
 
-import { AppRoute } from "../../navigation/app-routes";
+import { AppRoute } from "../../../navigation/app-routes";
 
-import { HomeScreen } from "./home.component";
+import { HomeScreen } from "./home.screen";
 
 import { IconProps, Icon, IconElement } from "@ui-kitten/components";
 

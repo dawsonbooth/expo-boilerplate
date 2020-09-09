@@ -1,2 +1,2 @@
-export { OopsScreen } from "./oops.component";
+export { OopsScreen } from "./oops.screen";
 export const path = "*";

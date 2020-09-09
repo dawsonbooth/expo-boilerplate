@@ -3,7 +3,7 @@ import * as React from "react";
 import { List, ListItem, CheckBox } from "@ui-kitten/components";
 
 import * as strings from "./strings";
-import { useSettings, State } from "../../state";
+import { useSettings, State } from "../../../state";
 import { Heading } from "./heading.component";
 
 type ThemeSetting = {

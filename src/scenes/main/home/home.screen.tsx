@@ -2,22 +2,21 @@ import * as React from "react";
 
 import { StyleSheet } from "react-native";
 
-import { TopNavigation, Divider, Layout } from "@ui-kitten/components";
+import { Text, TopNavigation, Divider, Layout } from "@ui-kitten/components";
 import {
   SafeAreaLayout,
   SaveAreaInset,
-} from "../../components/safe-area-layout.component";
+} from "../../../components/safe-area-layout.component";
 
 import * as strings from "./strings";
-import { ThemeSettings } from "./theme.component";
 
-export function SettingsScreen() {
+export function HomeScreen() {
   return (
     <SafeAreaLayout insets={SaveAreaInset.TOP} style={styles.screen}>
       <TopNavigation title={strings.title} alignment="center" />
       <Divider />
       <Layout level="2" style={styles.container}>
-        <ThemeSettings />
+        <Text category="h1">{strings.title}</Text>
       </Layout>
     </SafeAreaLayout>
   );
@@ -29,5 +28,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

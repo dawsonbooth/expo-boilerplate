@@ -1,8 +1,8 @@
 import * as Linking from "expo-linking";
 import { LinkingOptions } from "@react-navigation/native";
 
-import * as home from "../scenes/home";
-import * as settings from "../scenes/settings";
+import * as home from "../scenes/main/home";
+import * as settings from "../scenes/main/settings";
 import * as oops from "../scenes/oops";
 
 import { AppRoute } from "./app-routes";
