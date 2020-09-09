@@ -1,0 +1,18 @@
+import { compose, createStore } from "redux";
+import { persistStore } from "redux-persist";
+import reducers from "./reducers";
+
+declare global {
+  interface Window {
+    __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+  }
+}
+
+const preloadedState = {
+  settings: undefined,
+};
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+export const store = createStore(reducers, preloadedState, composeEnhancers());
+export const persistor = persistStore(store);

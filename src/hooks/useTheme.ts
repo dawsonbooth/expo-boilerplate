@@ -1,6 +1,7 @@
 import * as eva from "@eva-design/eva";
 import { StatusBarStyle } from "expo-status-bar";
 import { useColorScheme } from "react-native-appearance";
+import { useSettings } from "../state";
 
 const custom = {
   "color-primary-100": "#C7F9E0",
@@ -85,17 +86,26 @@ interface Theme {
   statusBar: StatusBarStyle;
 }
 
-export default function useTheme(): Theme {
-  // TODO: Use Redux hook along with useColorScheme to get user-selected theme
-  const colorScheme = useColorScheme();
+function useLightTheme(): Theme {
+  return {
+    app: { ...eva.light, ...custom },
+    statusBar: "dark",
+  };
+}
 
-  if (colorScheme === "light")
-    return {
-      app: { ...eva.light, ...custom },
-      statusBar: "dark",
-    };
+function useDarkTheme(): Theme {
   return {
     app: { ...eva.dark, ...custom },
     statusBar: "light",
   };
+}
+
+export default function useTheme(): Theme {
+  const colorScheme = useColorScheme();
+  const { settings } = useSettings();
+
+  const theme = settings.theme === "no-preference" ? colorScheme : settings.theme;
+
+  if (theme === "light") return useLightTheme();
+  return useDarkTheme();
 }
