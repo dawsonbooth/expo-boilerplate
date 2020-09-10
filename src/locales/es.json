@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "title": "Configuraciones",
+    "theme": {
+      "heading": "Tema",
+      "automatic": "Automático",
+      "light": "Ligero",
+      "dark": "Oscuro"
+    }
+  },
+  "home": {
+    "title": "Hogar"
+  },
+  "oops": {
+    "title": "Ups!",
+    "text": "¡Ir a la pantalla de inicio!"
+  }
+}

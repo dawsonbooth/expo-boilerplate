@@ -7,6 +7,8 @@ import { RootParamList } from "../../navigation";
 import { AppRoute } from "../../navigation/app-routes";
 import { SafeAreaLayout } from "../../components/safe-area-layout.component";
 
+import i18n from "../../locales";
+
 export function OopsScreen({
   navigation,
 }: StackScreenProps<RootParamList, AppRoute.OOPS>) {
@@ -16,7 +18,7 @@ export function OopsScreen({
       {/* FIXME: Divider is invisible on web for some reason */}
       <Divider style={{ margin: 10 }} />
       <Button onPress={() => navigation.replace(AppRoute.MAIN)}>
-        Go to home screen!
+        {i18n.t("oops.text")}
       </Button>
     </SafeAreaLayout>
   );

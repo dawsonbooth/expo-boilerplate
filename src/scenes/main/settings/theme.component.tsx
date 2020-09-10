@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { List, ListItem, CheckBox } from "@ui-kitten/components";
 
-import * as strings from "./strings";
+import i18n from "i18n-js";
 import { useSettings, State } from "../../../state";
 import { Heading } from "./heading.component";
 
@@ -23,9 +23,9 @@ export function ThemeSettings() {
   const { settings, setTheme } = useSettings();
 
   const data: ThemeSetting[] = [
-    { title: strings.automatic, theme: "no-preference" },
-    { title: strings.light, theme: "light" },
-    { title: strings.dark, theme: "dark" },
+    { title: i18n.t("settings.theme.automatic"), theme: "no-preference" },
+    { title: i18n.t("settings.theme.light"), theme: "light" },
+    { title: i18n.t("settings.theme.dark"), theme: "dark" },
   ];
 
   const ThemeCheckBox: React.FC<ThemeCheckBoxProps> = ({ theme }) => (
@@ -47,7 +47,7 @@ export function ThemeSettings() {
 
   return (
     <>
-      <Heading heading={strings.theme} />
+      <Heading heading={i18n.t("settings.theme.heading")} />
       <List scrollEnabled={false} data={data} renderItem={renderItem} />
     </>
   );

@@ -22,5 +22,8 @@
     "web": {
       "favicon": "./assets/images/favicon.png"
     }
+  },
+  "ios": {
+    "CFBundleAllowMixedLocalizations": true
   }
 }

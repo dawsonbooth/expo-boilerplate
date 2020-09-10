@@ -7,7 +7,7 @@ import { HomeScreen } from "./home.screen";
 
 import { IconProps, Icon, IconElement } from "@ui-kitten/components";
 
-import * as strings from "./strings";
+import i18n from "../../../locales";
 
 export type HomeParamList = {
   [AppRoute.HOME_SCREEN]: undefined;
@@ -28,7 +28,7 @@ const HomeIcon = (props: IconProps): IconElement => (
 );
 
 export const tab = {
-  title: strings.title,
+  title: i18n.t("home.title"),
   icon: HomeIcon,
   component: HomeNavigator,
 };

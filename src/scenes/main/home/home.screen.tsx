@@ -8,15 +8,17 @@ import {
   SaveAreaInset,
 } from "../../../components/safe-area-layout.component";
 
-import * as strings from "./strings";
+import i18n from "../../../locales";
 
 export function HomeScreen() {
+  const title = i18n.t("home.title");
+
   return (
     <SafeAreaLayout insets={SaveAreaInset.TOP} style={styles.screen}>
-      <TopNavigation title={strings.title} alignment="center" />
+      <TopNavigation title={title} alignment="center" />
       <Divider />
       <Layout level="2" style={styles.container}>
-        <Text category="h1">{strings.title}</Text>
+        <Text category="h1">{title}</Text>
       </Layout>
     </SafeAreaLayout>
   );

@@ -9,6 +9,8 @@ import { AppRoute } from "./app-routes";
 
 import linking from "./linking";
 
+import i18n from "../locales";
+
 export type RootParamList = {
   [AppRoute.MAIN]: undefined;
   [AppRoute.OOPS]: undefined;
@@ -25,7 +27,7 @@ function RootNavigator() {
       <Stack.Screen
         name={AppRoute.OOPS}
         component={OopsScreen}
-        options={{ title: "Oops!" }}
+        options={{ title: i18n.t("oops.title") }}
       />
     </Stack.Navigator>
   );

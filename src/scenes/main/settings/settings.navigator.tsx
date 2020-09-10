@@ -7,7 +7,7 @@ import { SettingsScreen } from "./settings.screen";
 
 import { IconProps, Icon, IconElement } from "@ui-kitten/components";
 
-import * as strings from "./strings";
+import i18n from "i18n-js";
 
 export type SettingsParamList = {
   [AppRoute.SETTINGS_SCREEN]: undefined;
@@ -31,7 +31,7 @@ const SettingsIcon = (props: IconProps): IconElement => (
 );
 
 export const tab = {
-  title: strings.title,
+  title: i18n.t("settings.title"),
   icon: SettingsIcon,
   component: SettingsNavigator,
 };

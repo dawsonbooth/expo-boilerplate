@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "title": "Settings",
+    "theme": {
+      "heading": "Theme",
+      "automatic": "Automatic",
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "home": {
+    "title": "Home"
+  },
+  "oops": {
+    "title": "Oops!",
+    "text": "Go to the home screen!"
+  }
+}

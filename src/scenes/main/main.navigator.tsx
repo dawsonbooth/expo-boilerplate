@@ -5,9 +5,6 @@ import { TabBar } from "./tab-bar.component";
 import { IconProps, IconElement } from "@ui-kitten/components";
 import { AppRoute } from "../../navigation/app-routes";
 
-import { SettingsNavigator } from "./settings";
-import { HomeNavigator } from "./home";
-
 import * as settings from "./settings";
 import * as home from "./home";
 
