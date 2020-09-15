@@ -3,6 +3,7 @@
     "name": "expo-boilerplate",
     "slug": "expo-boilerplate",
     "version": "1.0.0",
+    "description": "React Native / Expo / React Redux / React Navigation v5 / UI Kitten / i18n-js",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
